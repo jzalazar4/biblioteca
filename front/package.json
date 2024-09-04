@@ -1,0 +1,42 @@
+{
+    "dependencies": {
+        "@vue/cli-service": "^5.0.8",
+        "apexcharts": "^3.51.0",
+        "axios": "^1.6.8",
+        "bootstrap": "^5.3.3",
+        "boxicons": "^2.1.4",
+        "chart.js": "^4.4.3",
+        "date-fns": "^3.6.0",
+        "js-cookie": "^3.0.5",
+        "jwt-decode": "^4.0.0",
+        "lodash": "^4.17.21",
+        "moment": "^2.30.1",
+        "moment-timezone": "^0.5.45",
+        "notivue": "^2.4.4",
+        "vue-axios": "^3.5.2",
+        "vue-chartjs": "^5.3.1",
+        "vue-columns-resizable": "^0.0.1",
+        "vue-columns-resizable-vuetify": "^1.0.3",
+        "vue-csv-import": "^4.1.2",
+        "vue-demi": "^0.14.7",
+        "vue-moment": "^4.1.0",
+        "vue-router": "^4.3.2",
+        "vue-sidebar-menu": "^5.4.0",
+        "vue-star-rating": "^2.1.0",
+        "vue-table": "^0.2.2",
+        "vue3-apexcharts": "^1.5.3",
+        "vuelidate": "^0.7.7",
+        "vuetify": "^3.6.12",
+        "vuex": "^4.1.0",
+        "vuex-persistedstate": "^4.1.0",
+        "webpack": "^5.90.3"
+    },
+    "scripts": {
+        "serve": "vue-cli-service serve"
+    },
+    "devDependencies": {
+        "@babel/preset-env": "^7.24.0",
+        "@types/vuelidate": "^0.7.21",
+        "vue": "^3.2.26"
+    }
+}

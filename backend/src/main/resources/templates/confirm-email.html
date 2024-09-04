@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Confirme su email</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .logo {
+            width: 150px;
+            height: auto;
+            margin-bottom: 30px;
+        }
+        .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<!--
+<img src="/images/logo.png" th:src="@{images/logo.png}" alt="Library logo" class="logo"/>-->
+<h1>Bienvenido/a, <span th:text= "${nombre}"></span>!</h1>
+<p>Gracias por registrarse. Para confirmar su cuenta, haga click en el link:</p>
+<p>
+    <a th:href="${confirmationUrl}" class="btn" onclick="setTimeout()">
+        Confirmar email
+    </a>
+</p>
+<p>Si no fue usted, por favor ignore el mensaje.</p>
+<p>Biblioteca</p>
+
+<script>
+    setTimeout(function() {
+        window.location.href = 'http:localhost:8080/signin';
+    }, 5000); // Redirigir después de 5 segundos
+</script>
+
+</body>
+
+</html>
